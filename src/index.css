@@ -1,0 +1,111 @@
+/* General */
+body {
+  background-color: darkslategrey;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+#game {
+  width: 300px;
+  height: 300px;
+}
+
+td {
+  border: 1px solid black;
+}
+
+/* Intro.jsx */
+#containerIntro {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#titleIntro {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#containerUsername {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 25px;
+}
+
+#containerWeapon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+
+.weapon {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#x {
+  color: blue;
+}
+
+#o {
+  color: red;
+}
+
+/* Game.jsx */
+
+#containerGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#containerSquares {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  width: 300px;
+  height: 300px;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 4rem;
+}
+
+#button {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  width: auto;
+  border-radius: 10px;
+  text-align: center;
+}
